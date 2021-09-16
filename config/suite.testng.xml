@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Pool" parallel="tests">
+    <test name="PoolTestChrome" thread-count="3" parallel="classes">
+        <parameter name="config" value="suite.conf.json"/>
+        <parameter name="environment" value="chrome"/>
+        <classes>
+            <class name="com.fancode.shop.qa.testcase.FancodeHomePageTest"/>
+            <class name="com.fancode.shop.qa.testcase.ShopHomePageTest"/>
+            <class name="com.fancode.shop.qa.testcase.CollectionPageTest"/>
+        </classes>
+    </test>
+
+    <test name="PoolTestFirefox" thread-count="3" parallel="classes">
+        <parameter name="config" value="suite.conf.json"/>
+        <parameter name="environment" value="firefox"/>
+        <classes>
+            <class name="com.fancode.shop.qa.testcase.FancodeHomePageTest"/>
+            <class name="com.fancode.shop.qa.testcase.ShopHomePageTest"/>
+            <class name="com.fancode.shop.qa.testcase.CollectionPageTest"/>
+        </classes>
+    </test>
+</suite>

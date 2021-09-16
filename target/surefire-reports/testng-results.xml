@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="7" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-09-16T18:27:20 IST" name="Parallel" finished-at="2021-09-16T18:29:01 IST" duration-ms="101059">
+    <groups>
+    </groups>
+    <test started-at="2021-09-16T18:27:20 IST" name="SingleTestEnv3" finished-at="2021-09-16T18:27:40 IST" duration-ms="20148">
+      <class name="com.fancode.shop.qa.testcase.CollectionPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.fancode.shop.qa.testcase.CollectionPageTest@2a40cd94]" started-at="2021-09-16T18:27:20 IST" name="setUp" finished-at="2021-09-16T18:27:33 IST" duration-ms="13079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parallel.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[env1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="collectionProductClickTest()[pri:0, instance:com.fancode.shop.qa.testcase.CollectionPageTest@2a40cd94]" started-at="2021-09-16T18:27:33 IST" name="collectionProductClickTest" finished-at="2021-09-16T18:27:39 IST" duration-ms="5365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- collectionProductClickTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fancode.shop.qa.testcase.CollectionPageTest@2a40cd94]" started-at="2021-09-16T18:27:39 IST" name="tearDown" finished-at="2021-09-16T18:27:40 IST" duration-ms="1677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.fancode.shop.qa.testcase.CollectionPageTest -->
+    </test> <!-- SingleTestEnv3 -->
+    <test started-at="2021-09-16T18:27:20 IST" name="SingleTestEnv2" finished-at="2021-09-16T18:28:26 IST" duration-ms="65938">
+      <class name="com.fancode.shop.qa.testcase.FancodeHomePageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.fancode.shop.qa.testcase.FancodeHomePageTest@de3a06f]" started-at="2021-09-16T18:27:20 IST" name="setUp" finished-at="2021-09-16T18:27:47 IST" duration-ms="26907" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parallel.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[env1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fancodeHomePageTitleTest()[pri:0, instance:com.fancode.shop.qa.testcase.FancodeHomePageTest@de3a06f]" started-at="2021-09-16T18:27:47 IST" name="fancodeHomePageTitleTest" finished-at="2021-09-16T18:27:53 IST" duration-ms="6208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fancodeHomePageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fancode.shop.qa.testcase.FancodeHomePageTest@de3a06f]" started-at="2021-09-16T18:27:53 IST" name="tearDown" finished-at="2021-09-16T18:27:54 IST" duration-ms="1286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.fancode.shop.qa.testcase.FancodeHomePageTest@de3a06f]" started-at="2021-09-16T18:27:54 IST" name="setUp" finished-at="2021-09-16T18:28:06 IST" duration-ms="11747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parallel.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[env1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shopImageVisibilityTest()[pri:0, instance:com.fancode.shop.qa.testcase.FancodeHomePageTest@de3a06f]" started-at="2021-09-16T18:28:06 IST" name="shopImageVisibilityTest" finished-at="2021-09-16T18:28:10 IST" duration-ms="3391" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.shopButton" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.shopButton" is null
+at com.fancode.shop.qa.testcase.FancodeHomePageTest.shopImageVisibilityTest(FancodeHomePageTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shopImageVisibilityTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fancode.shop.qa.testcase.FancodeHomePageTest@de3a06f]" started-at="2021-09-16T18:28:10 IST" name="tearDown" finished-at="2021-09-16T18:28:11 IST" duration-ms="1537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.fancode.shop.qa.testcase.FancodeHomePageTest@de3a06f]" started-at="2021-09-16T18:28:11 IST" name="setUp" finished-at="2021-09-16T18:28:24 IST" duration-ms="13128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parallel.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[env1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fancode.shop.qa.testcase.FancodeHomePageTest@de3a06f]" started-at="2021-09-16T18:28:24 IST" name="tearDown" finished-at="2021-09-16T18:28:26 IST" duration-ms="1703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="shopOnClickTest()[pri:0, instance:com.fancode.shop.qa.testcase.FancodeHomePageTest@de3a06f]" started-at="2021-09-16T18:28:24 IST" name="shopOnClickTest" finished-at="2021-09-16T18:28:24 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because "this.shopButton" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because "this.shopButton" is null
+at com.fancode.shop.qa.testcase.FancodeHomePageTest.shopOnClickTest(FancodeHomePageTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shopOnClickTest -->
+      </class> <!-- com.fancode.shop.qa.testcase.FancodeHomePageTest -->
+    </test> <!-- SingleTestEnv2 -->
+    <test started-at="2021-09-16T18:27:20 IST" name="SingleTestEnv1" finished-at="2021-09-16T18:29:01 IST" duration-ms="101059">
+      <class name="com.fancode.shop.qa.testcase.ShopHomePageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.fancode.shop.qa.testcase.ShopHomePageTest@18bf3d14]" started-at="2021-09-16T18:27:20 IST" name="setUp" finished-at="2021-09-16T18:27:32 IST" duration-ms="12376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parallel.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[env1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickCarouselBannerTest()[pri:0, instance:com.fancode.shop.qa.testcase.ShopHomePageTest@18bf3d14]" started-at="2021-09-16T18:27:32 IST" name="clickCarouselBannerTest" finished-at="2021-09-16T18:27:40 IST" duration-ms="7281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCarouselBannerTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fancode.shop.qa.testcase.ShopHomePageTest@18bf3d14]" started-at="2021-09-16T18:27:40 IST" name="tearDown" finished-at="2021-09-16T18:27:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.fancode.shop.qa.testcase.ShopHomePageTest@18bf3d14]" started-at="2021-09-16T18:27:40 IST" name="setUp" finished-at="2021-09-16T18:27:53 IST" duration-ms="12788" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parallel.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[env1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="hamburgerMenuOnClickTest()[pri:0, instance:com.fancode.shop.qa.testcase.ShopHomePageTest@18bf3d14]" started-at="2021-09-16T18:27:53 IST" name="hamburgerMenuOnClickTest" finished-at="2021-09-16T18:28:00 IST" duration-ms="7291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hamburgerMenuOnClickTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fancode.shop.qa.testcase.ShopHomePageTest@18bf3d14]" started-at="2021-09-16T18:28:00 IST" name="tearDown" finished-at="2021-09-16T18:28:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.fancode.shop.qa.testcase.ShopHomePageTest@18bf3d14]" started-at="2021-09-16T18:28:00 IST" name="setUp" finished-at="2021-09-16T18:28:12 IST" duration-ms="12085" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parallel.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[env1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="hamburgerMenuOnCloseClickTest()[pri:0, instance:com.fancode.shop.qa.testcase.ShopHomePageTest@18bf3d14]" started-at="2021-09-16T18:28:12 IST" name="hamburgerMenuOnCloseClickTest" finished-at="2021-09-16T18:28:20 IST" duration-ms="8166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hamburgerMenuOnCloseClickTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fancode.shop.qa.testcase.ShopHomePageTest@18bf3d14]" started-at="2021-09-16T18:28:20 IST" name="tearDown" finished-at="2021-09-16T18:28:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.fancode.shop.qa.testcase.ShopHomePageTest@18bf3d14]" started-at="2021-09-16T18:28:20 IST" name="setUp" finished-at="2021-09-16T18:28:31 IST" duration-ms="11366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parallel.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[env1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shopCartOnClickTest()[pri:0, instance:com.fancode.shop.qa.testcase.ShopHomePageTest@18bf3d14]" started-at="2021-09-16T18:28:31 IST" name="shopCartOnClickTest" finished-at="2021-09-16T18:28:39 IST" duration-ms="7924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shopCartOnClickTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fancode.shop.qa.testcase.ShopHomePageTest@18bf3d14]" started-at="2021-09-16T18:28:39 IST" name="tearDown" finished-at="2021-09-16T18:28:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.fancode.shop.qa.testcase.ShopHomePageTest@18bf3d14]" started-at="2021-09-16T18:28:39 IST" name="setUp" finished-at="2021-09-16T18:28:52 IST" duration-ms="12246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parallel.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[env1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shopCartOnCloseClickTest()[pri:0, instance:com.fancode.shop.qa.testcase.ShopHomePageTest@18bf3d14]" started-at="2021-09-16T18:28:52 IST" name="shopCartOnCloseClickTest" finished-at="2021-09-16T18:29:01 IST" duration-ms="9508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shopCartOnCloseClickTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fancode.shop.qa.testcase.ShopHomePageTest@18bf3d14]" started-at="2021-09-16T18:29:01 IST" name="tearDown" finished-at="2021-09-16T18:29:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.fancode.shop.qa.testcase.ShopHomePageTest -->
+    </test> <!-- SingleTestEnv1 -->
+  </suite> <!-- Parallel -->
+</testng-results>

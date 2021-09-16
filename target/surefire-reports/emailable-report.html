@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Parallel</th></tr>
+<tr><td><a href="#t0">SingleTestEnv3</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">20,148</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">SingleTestEnv2</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">65,938</td><td></td><td></td></tr>
+<tr><td><a href="#t2">SingleTestEnv1</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">101,059</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">7</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">187,145</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parallel</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SingleTestEnv3 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.fancode.shop.qa.testcase.CollectionPageTest</td><td><a href="#m0">collectionProductClickTest</a></td><td rowspan="1">1631797053674</td><td rowspan="1">5365</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">SingleTestEnv2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.fancode.shop.qa.testcase.FancodeHomePageTest</td><td><a href="#m1">shopImageVisibilityTest</a></td><td rowspan="1">1631797086745</td><td rowspan="1">3391</td></tr><tr class="failedeven"><td><a href="#m2">shopOnClickTest</a></td><td rowspan="1">1631797104807</td><td rowspan="1">0</td></tr><tr><th colspan="4">SingleTestEnv2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.fancode.shop.qa.testcase.FancodeHomePageTest</td><td><a href="#m3">fancodeHomePageTitleTest</a></td><td rowspan="1">1631797067503</td><td rowspan="1">6208</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">SingleTestEnv1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.fancode.shop.qa.testcase.ShopHomePageTest</td><td><a href="#m4">clickCarouselBannerTest</a></td><td rowspan="1">1631797052973</td><td rowspan="1">7281</td></tr><tr class="passedeven"><td><a href="#m5">hamburgerMenuOnClickTest</a></td><td rowspan="1">1631797073043</td><td rowspan="1">7291</td></tr><tr class="passedeven"><td><a href="#m6">hamburgerMenuOnCloseClickTest</a></td><td rowspan="1">1631797092420</td><td rowspan="1">8166</td></tr><tr class="passedeven"><td><a href="#m7">shopCartOnClickTest</a></td><td rowspan="1">1631797111953</td><td rowspan="1">7924</td></tr><tr class="passedeven"><td><a href="#m8">shopCartOnCloseClickTest</a></td><td rowspan="1">1631797132123</td><td rowspan="1">9508</td></tr></tbody>
+</table>
+<h2>SingleTestEnv3</h2><h3 id="m0">com.fancode.shop.qa.testcase.CollectionPageTest#collectionProductClickTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>SingleTestEnv2</h2><h3 id="m1">com.fancode.shop.qa.testcase.FancodeHomePageTest#shopImageVisibilityTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.isDisplayed()&quot; because &quot;this.shopButton&quot; is null
+	at com.fancode.shop.qa.testcase.FancodeHomePageTest.shopImageVisibilityTest(FancodeHomePageTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.fancode.shop.qa.testcase.FancodeHomePageTest#shopOnClickTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;this.shopButton&quot; is null
+	at com.fancode.shop.qa.testcase.FancodeHomePageTest.shopOnClickTest(FancodeHomePageTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.fancode.shop.qa.testcase.FancodeHomePageTest#fancodeHomePageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>SingleTestEnv1</h2><h3 id="m4">com.fancode.shop.qa.testcase.ShopHomePageTest#clickCarouselBannerTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.fancode.shop.qa.testcase.ShopHomePageTest#hamburgerMenuOnClickTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.fancode.shop.qa.testcase.ShopHomePageTest#hamburgerMenuOnCloseClickTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.fancode.shop.qa.testcase.ShopHomePageTest#shopCartOnClickTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.fancode.shop.qa.testcase.ShopHomePageTest#shopCartOnCloseClickTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

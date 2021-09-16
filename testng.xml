@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Fancode Desktop Web">
+
+    <test name="Fancode Web Test Cases">
+        <groups>
+            <run>
+                <!--execute group can be git branch used for local execution add this to test case which you want to run and remove others from this-->
+            </run>
+        </groups>
+        <classes>
+            <class name="com.fancode.shop.qa.testcase.FancodeHomePageTest"/>
+            <class name="com.fancode.shop.qa.testcase.ShopHomePageTest"/>
+            <class name="com.fancode.shop.qa.testcase.CollectionPageTest"/>
+        </classes>
+    </test>
+</suite>

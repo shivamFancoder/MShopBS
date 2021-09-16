@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 101.468 sec <<< FAILURE! - in TestSuite
+shopImageVisibilityTest(com.fancode.shop.qa.testcase.FancodeHomePageTest)  Time elapsed: 3.398 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.shopButton" is null
+	at com.fancode.shop.qa.testcase.FancodeHomePageTest.shopImageVisibilityTest(FancodeHomePageTest.java:37)
+
+shopOnClickTest(com.fancode.shop.qa.testcase.FancodeHomePageTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because "this.shopButton" is null
+	at com.fancode.shop.qa.testcase.FancodeHomePageTest.shopOnClickTest(FancodeHomePageTest.java:44)
+

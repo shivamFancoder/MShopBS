@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Single]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="SingleTest(failed)" verbose="0">
+    <parameter name="environment" value="chrome"/>
+    <parameter name="config" value="single.conf.json"/>
+    <classes>
+      <class name="com.fancode.shop.qa.testcase.ShopHomePageTest">
+        <methods>
+          <include name="hamburgerMenuOnClickTest"/>
+          <include name="hamburgerMenuOnCloseClickTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="shopCartOnClickTest"/>
+          <include name="clickCarouselBannerTest"/>
+          <include name="shopCartOnCloseClickTest"/>
+        </methods>
+      </class> <!-- com.fancode.shop.qa.testcase.ShopHomePageTest -->
+    </classes>
+  </test> <!-- SingleTest(failed) -->
+</suite> <!-- Failed suite [Single] -->

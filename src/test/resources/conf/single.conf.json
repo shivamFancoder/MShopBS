@@ -1,0 +1,23 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "shivamchaurasia_1WmsN8",
+  "key": "PPYoNoJxWWu8pvf2fSsG",
+
+
+  "capabilities": {
+    "build": "Shop Mweb Build #1",
+    "project": "POC Project",
+    "name": "parallel_test",
+    "browserstack.debug": true,
+    "os_version": "10.0",
+    "device": "Samsung Galaxy S20",
+    "real_mobile": true,
+    "browserstack.local": false
+  },
+
+  "environments": {
+    "chrome": {
+      "browser": "chrome"
+    }
+  }
+}

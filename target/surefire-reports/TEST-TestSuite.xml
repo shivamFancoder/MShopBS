@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="48.905" tests="9" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="16.0.2+0"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/16.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/shivam.chaurasi/Downloads/MShopBS"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/shivam.chaurasi/Downloads/MShopBS"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="16.0.2+0"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/6_/ggs1w31x3pn5y3_rr_00c3cc0000gp/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.8.2/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/shivam.chaurasi/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/usr/local/Cellar/maven/3.8.2/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="60.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="11.5.2"/>
+    <property name="user.home" value="/Users/shivam.chaurasi"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="file.encoding" value="US-ASCII"/>
+    <property name="java.specification.version" value="16"/>
+    <property name="user.name" value="shivam.chaurasi"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.8.2/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="16"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -P parallel"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/16.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="16.0.2"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.8.2/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2021-07-20"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+  </properties>
+  <testcase name="collectionProductClickTest" classname="com.fancode.shop.qa.testcase.CollectionPageTest" time="5.368"/>
+  <testcase name="clickCarouselBannerTest" classname="com.fancode.shop.qa.testcase.ShopHomePageTest" time="6.58"/>
+  <testcase name="fancodeHomePageTitleTest" classname="com.fancode.shop.qa.testcase.FancodeHomePageTest" time="0.669"/>
+  <testcase name="hamburgerMenuOnClickTest" classname="com.fancode.shop.qa.testcase.ShopHomePageTest" time="7.291"/>
+  <testcase name="shopImageVisibilityTest" classname="com.fancode.shop.qa.testcase.FancodeHomePageTest" time="3.398">
+    <failure message="Cannot invoke &quot;org.openqa.selenium.WebElement.isDisplayed()&quot; because &quot;this.shopButton&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.shopButton" is null
+	at com.fancode.shop.qa.testcase.FancodeHomePageTest.shopImageVisibilityTest(FancodeHomePageTest.java:37)
+</failure>
+    <system-err><![CDATA[Sep 16, 2021 6:28:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="hamburgerMenuOnCloseClickTest" classname="com.fancode.shop.qa.testcase.ShopHomePageTest" time="8.167"/>
+  <testcase name="shopOnClickTest" classname="com.fancode.shop.qa.testcase.FancodeHomePageTest" time="0">
+    <failure message="Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;this.shopButton&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because "this.shopButton" is null
+	at com.fancode.shop.qa.testcase.FancodeHomePageTest.shopOnClickTest(FancodeHomePageTest.java:44)
+</failure>
+    <system-err><![CDATA[Sep 16, 2021 6:28:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="shopCartOnClickTest" classname="com.fancode.shop.qa.testcase.ShopHomePageTest" time="7.924"/>
+  <testcase name="shopCartOnCloseClickTest" classname="com.fancode.shop.qa.testcase.ShopHomePageTest" time="9.508"/>
+</testsuite>

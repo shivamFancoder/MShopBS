@@ -1,0 +1,3 @@
+build,project,name,browserstack.debug,os_version,device,real_mobile,browserstack.local
+Shop Mweb Build #1,POC Project,parallel_test,TRUE,10,Samsung Galaxy S20,TRUE,FALSE
+Shop Mweb Build #2,POC Project,parallel_test,TRUE,14,iphone,TRUE,FALSE
